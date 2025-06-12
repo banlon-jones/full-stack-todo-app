@@ -39,6 +39,11 @@ Deletes a task by ID.
 - Create a .env file in the root directory and add the following:
     - PORT=3000
     - DATABASE_URI=mongodb+srv://<username>:<password>@<cluster-url>/todo-app
+    - FIREBASE_PROJECT_ID
+    - FIREBASE_CLIENT_EMAIL
+    - FIREBASE_PRIVATE_KEY
+  
+
 - Ensure the Firebase service account JSON file is in the root directory and update the path in src/configs/firebaseConfig.js if necessary.
 - Start the development server:  
   `npm start`
