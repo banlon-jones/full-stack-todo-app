@@ -1,6 +1,25 @@
 # TodoUi
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+Todo UI is the frontend for the Full Stack Todo App, built with Angular.
+
+## Features
+- sign in and sign up
+- Add, edit, and delete todo items
+- Mark todos as complete/incomplete
+- Responsive design
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [Angular CLI](https://angular.io/cli) (v19+)
+
+### Installation
+
+```bash
+npm install
+```
 
 ## Development server
 
@@ -53,6 +72,57 @@ ng e2e
 ```
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Project Structure
+src/app/ — Main application code
+
+src/environments/ — Environment configurations
+
+## Deploying the Application on GCP
+
+### steps
+1. Build the Angular application for production:
+  ```bash
+  ng build --prod
+  ```
+This will generate the production-ready files in the dist/ directory.
+
+2. Install the Firebase CLI:
+  ```bash
+  npm install -g firebase-tools
+  ```
+
+3. Initialize Firebase Hosting and select GCP project:
+  ```bash
+  firebase init hosting
+  ```
+4. Deploy the application:
+  ```bash
+  firebase deploy
+  ```
+
+## Using the To-Do List Application
+
+Navigate to the application in your browser.
+- Sign-in Page:
+
+Sign-in by filling out the form.
+If you do not have an account, click the "Sign up" link to navigate to the sign-up page.
+- Dashboard:
+
+View your list of tasks.
+
+Use the "Create Task" button to add a new task.
+
+Edit or delete tasks directly from the list.
+
+- 404 Page:
+
+If you navigate to an invalid route, you'll see a "404 Page Not Found" message with a link to return to the home page.
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first.
 
 ## Additional Resources
 
