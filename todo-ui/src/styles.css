@@ -6,14 +6,16 @@ body {
 }
 
 .full-bg {
-  background-image: url("../public/assets/images/loginbg.png");
+  background-image: url("../public/assets/images/bg-main.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 770px) {
   .hide-mobile {
     display: none;
     visibility: hidden;
@@ -22,6 +24,15 @@ body {
   .show-mobile {
     display: block;
     visibility: visible;
+  }
+  .full-bg {
+    background-image: url("../public/assets/images/bg-main.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
   }
 }
 @media (min-width: 760px) {
