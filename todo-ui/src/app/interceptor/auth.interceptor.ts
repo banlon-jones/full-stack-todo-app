@@ -1,7 +1,7 @@
 import { HttpInterceptorFn } from '@angular/common/http';
 import {Router} from '@angular/router';
 import {inject} from '@angular/core';
-import UserInfo from '../models/UserInfo';
+import UserInfo from '../domain/auth/models/UserInfo';
 
 export const authInterceptor: HttpInterceptorFn = (req, next) => {
   const user: UserInfo = JSON.parse(localStorage.getItem('user') || '{}');
