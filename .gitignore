@@ -7,4 +7,4 @@
 *.idea
 */*.angular/*
 *.tsbuildinfo
-/todo-ui/.angular
+*/.angular
