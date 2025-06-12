@@ -5,6 +5,14 @@ body {
   font-weight: lighter;
 }
 
+.full-bg {
+  background-image: url("../public/assets/images/loginbg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
 @media (max-width: 760px) {
   .hide-mobile {
     display: none;
